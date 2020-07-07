@@ -1,13 +1,17 @@
 {
-    "name": "alex-hnydiuk/laracent",
+    "name": "brianfp/laracent",
     "type": "library",
-    "description": "Centrifugo broadcaster for laravel >= 5.7 and Centrifugo >= 2.1.0",
-    "keywords": ["laravel", "centrifugo", "broadcaster"],
+    "description": "Centrifugo broadcaster for Lumen",
+    "keywords": ["lumen", "centrifugo", "broadcaster"],
     "license": "MIT",
     "authors": [
         {
             "name": "Alex Hnydiuk",
             "email": "o.hnydiuk@gmail.com"
+        },
+        {
+            "name": "Brian Florian",
+            "email": "brianflorianp@gmail.com"
         }
     ],
     "homepage": "https://github.com/AlexHnydiuk/laracent",
@@ -16,14 +20,16 @@
         "source": "https://github.com/AlexHnydiuk/laracent"
     },
     "require": {
-        "php": ">=7.2.12",
-        "laravel/framework": "^5.7",
-        "guzzlehttp/guzzle": "^6.2",
-        "illuminate/broadcasting": "^5.7"
+        "php": ">=7.3",
+        "laravel/framework": "^7",
+        "guzzlehttp/guzzle": "^6.5",
+        "illuminate/broadcasting": "^7.0",
+        "predis/predis": "^1.1",
+        "lcobucci/jwt": "3.3.*"
     },
     "require-dev": {
-        "orchestra/testbench": "^3.7",
-        "phpunit/phpunit": "^7||^8"
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^7|^8"
     },
     "autoload": {
         "psr-4": {
